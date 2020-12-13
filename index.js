@@ -5,12 +5,11 @@ for (var i = 0; i < drum_no; i++){
         sound(click);
         animation(click);
     });
-    document.addEventListener("keydown", function(event){
-        sound(event.key);
-        animation(event.key);
-    });
 }
-
+document.addEventListener("keydown", function(event){
+    sound(event.key);
+    animation(event.key);
+});
 
 function sound(key) {
 
@@ -43,7 +42,7 @@ function sound(key) {
                 var i7 = new Audio('sounds/tom-4.mp3');
                 i7.play();
                 break;
-            default: console.log(key)
+            default: console.log(key);
 }
 }
 
